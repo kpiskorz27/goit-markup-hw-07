@@ -33,6 +33,8 @@ ul {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .visually-hidden {
   position: absolute;
@@ -289,6 +291,18 @@ img {
     background-position: center;
     background-size: cover;
     margin: auto;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .homepage-first-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office.jpg), url(../images/people-office@x2.jpg);
+    }
   }
   .homepage-header {
     color: var(--WHITE);
@@ -977,6 +991,18 @@ img {
     background-size: cover;
     margin: auto;
   }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .homepage-first-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office.jpg), url(../images/people-office@x2.jpg);
+    }
+  }
   .homepage-header {
     color: var(--WHITE);
     font-size: 56px;
@@ -1627,6 +1653,18 @@ img {
     background-position: center;
     background-size: cover;
     margin: auto;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .homepage-first-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office.jpg), url(../images/people-office@x2.jpg);
+    }
   }
   .homepage-header {
     color: var(--WHITE);
