@@ -49,6 +49,18 @@
             </li>
           </ul>
         </address>
+        <menu class="menu-hamburger">
+          <button
+            type="button"
+            class="button-hamburger menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="32" height="22">
+              <use href="./images/icons.svg#icon-menu-hamburger"></use>
+            </svg>
+          </button>
+        </menu>
       </div>
     </header>
     <main>
@@ -488,6 +500,7 @@
                 placeholder="E-mail"
                 name="subscription"
                 class="input-footer"
+                required
             /></label>
             <button type="submit" class="subscribe-button-footer">
               Subscribe
@@ -584,6 +597,74 @@
           </div>
           <button type="submit" class="send-button-modal-box">Send</button>
         </form>
+      </div>
+    </div>
+    <div class="js-menu-container menu-container-a" id="mobile-menu">
+      <div class="hamburger-div">
+        <div class="hamburger-button-container">
+          <button class="js-close-menu hamburger-close-button">
+            <svg class="hamburger-close-svg" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-x"></use>
+            </svg>
+          </button>
+        </div>
+        <nav class="hamburger-navigation">
+          <ul class="hamburger-nav-list">
+            <li>
+              <a class="hamburger-nav-link link" href="./index.html">Studio</a>
+            </li>
+            <li>
+              <a class="hamburger-nav-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li><a class="hamburger-nav-link link" href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <address class="hamburger-address">
+          <ul class="hamburger-address-list">
+            <li>
+              <a class="hamburger-phone link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a class="hamburger-mail link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="hamburger-social-media-list">
+          <li class="hamburger-social-media-li">
+            <a class="hamburger-social-media-link" href="">
+              <svg class="hamburger-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="hamburger-social-media-li">
+            <a class="hamburger-social-media-link" href="">
+              <svg class="hamburger-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="hamburger-social-media-li">
+            <a class="hamburger-social-media-link" href="">
+              <svg class="hamburger-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="hamburger-social-media-li">
+            <a class="hamburger-social-media-link" href="">
+              <svg class="hamburger-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
     <script src="./js/modal.js"></script>
