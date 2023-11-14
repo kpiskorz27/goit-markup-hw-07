@@ -1346,7 +1346,6 @@ img {
   .footer {
     background-color: var(--NAVY-BLUE);
     padding: 96px 0 96px 0;
-    flex-shrink: 0;
     min-width: 768px;
   }
   .container-footer {
@@ -1373,7 +1372,6 @@ img {
     display: flex;
     max-width: 264px;
   }
-
   .footer-social-media-paragraph {
     font-weight: 500;
     font-size: 16px;
@@ -1715,31 +1713,33 @@ img {
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   }
   .footer {
-    background-color: var(--NAVY-BLUE);
-    padding: 100px 0 100px 0;
-    flex-shrink: 0;
+    min-width: 1158px;
+    display: block;
   }
-  .footer .container,
+  .container-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .footer .link {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--IRIS);
+    display: inline-block;
+    margin-bottom: 16px;
+  }
   .footer-form {
     display: flex;
     align-items: baseline;
     gap: 24px;
   }
-  .footer-paragraph {
-    margin-right: 120px;
-    align-items: center;
-  }
-  .footer-social-media-paragraph {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--WHITE);
-    margin-bottom: 16px;
-  }
   .footer-social-media-list {
-    display: flex;
-    gap: 16px;
+    align-items: center;
+    justify-content: center;
   }
   .footer-social-media-li {
     width: 40px;
@@ -1760,28 +1760,12 @@ img {
   .footer-social-media-link-icon:active {
     background-color: #31d0aa;
   }
-  .footer .link {
-    font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    color: var(--IRIS);
-    display: inline-block;
-    margin-bottom: 16px;
-  }
+
   .footer-social-media-icons {
     fill: var(--CLOUD);
   }
   .studio-footer {
     color: var(--CLOUD);
-  }
-  .logo {
-    color: #f4f4fd;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
   }
   .filter-button {
     background-color: var(--CLOUD);
@@ -1850,9 +1834,7 @@ img {
   .homepage-fourth-section .team-list {
     border-radius: 0px 0px 4px 4px;
   }
-  .footer .logo {
-    max-width: 264px;
-  }
+
   .portfolio {
     padding-top: 96px;
     padding-bottom: 120px;
@@ -1967,6 +1949,11 @@ img {
   }
   .homepage-fifth-section {
     padding: 120px 0;
+  }
+  .homepage-fifth-section .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .header-customers {
     font-size: 36px;
