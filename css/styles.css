@@ -1420,7 +1420,7 @@ img {
   .footer {
     background-color: var(--NAVY-BLUE);
     padding: 96px 0 96px 0;
-    min-width: 768px;
+    width: 768px;
   }
   .container-footer {
     display: flex;
