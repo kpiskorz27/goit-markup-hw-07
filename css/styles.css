@@ -224,10 +224,8 @@ img {
 /* --------------- MOBILE max-width 428px ----------------------------*/
 @media screen and (max-width: 428px) {
   .container,
-  .header-standard .container,
   .homepage-first-section,
   .homepage-header,
-  .homepage-first-section .container,
   .homepage-second-section,
   .homepage-second-section .list,
   .homepage-third-section .header,
