@@ -221,14 +221,62 @@ img {
 .hamburger-social-media-link:focus {
   background-color: #4d5ae5;
 }
+/* --------------- MOBILE max-width 428px ----------------------------*/
+@media screen and (max-width: 428px) {
+  .container,
+  .header-standard .container,
+  .homepage-first-section,
+  .homepage-header,
+  .homepage-first-section .container,
+  .homepage-second-section,
+  .homepage-second-section .list,
+  .homepage-third-section .header,
+  .icon-container,
+  .homepage-fourth-section,
+  .homepage-fourth-section .header,
+  .homepage-fourth-section .list,
+  .team-name,
+  .team-list,
+  .homepage-fifth-section,
+  .header-customers,
+  .customers-list,
+  .customers-li,
+  .customers-link,
+  .footer,
+  .footer .link,
+  .footer .logo,
+  .footer-social-media,
+  .footer-social-media-paragraph,
+  .footer-social-media-list,
+  .footer-social-media-li,
+  .subscribe-icon-paper-plane,
+  .input-footer,
+  .container-footer,
+  .footer-form,
+  .subscribe-button-footer,
+  .subscribe-icon-paper-plane,
+  .subscribe-container,
+  .subscribe-paragraph {
+    max-width: 100%;
+    margin: auto;
+  }
+  .header-standard .container {
+    width: 100%;
+  }
+
+  .nav .logo {
+    margin-right: 10px;
+  }
+}
 
 /* --------------- MOBILE FIRST ----------------------------*/
 @media screen and (max-width: 767px) {
   .container {
-    max-width: 767px;
+    width: 428px;
+    margin: auto;
   }
   .header-standard .container {
-    max-width: 767px;
+    width: 428px;
     padding-left: 16px;
     padding-right: 16px;
     margin-left: auto;
@@ -286,7 +334,7 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office.jpg);
-    max-width: 767px;
+    max-width: 428px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -517,12 +565,16 @@ img {
   }
 
   .homepage-second-section {
-    padding: 96px 16px;
+    padding: 96px 0;
   }
   .homepage-second-section .list {
     display: flex;
     gap: 72px;
     flex-wrap: wrap;
+  }
+  .homepage-second-section .container {
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .homepage-third-section .header {
     display: none;
@@ -828,7 +880,8 @@ img {
 /* --------------- TABLET ----------------------------*/
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 768px;
+    width: 768px;
+    margin: auto;
   }
   .menu-hamburger {
     display: none;
@@ -985,7 +1038,7 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office.jpg);
-    min-width: 768px;
+    max-width: 768px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1511,6 +1564,10 @@ img {
   .menu-hamburger {
     display: none;
   }
+  .container {
+    width: 1158px;
+    margin: auto;
+  }
   .header-standard {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -1648,7 +1705,7 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office.jpg);
-    max-width: 1440px;
+    max-width: 1158px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
